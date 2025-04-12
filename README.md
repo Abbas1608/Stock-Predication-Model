@@ -1,12 +1,12 @@
 # 📈 Stock Prediction Model with n8n Integration
 
-## 🧠 1. Introduction
+## 1. Introduction
 
 This project integrates a stock price prediction machine learning model with an automated conversational workflow using [n8n](https://n8n.io/). The goal is to make intelligent stock price predictions easily accessible via a chat interface, powered by OpenAI and automated through n8n’s low-code automation platform.
 
 ---
 
-## ❓ 2. Why is it needed?
+## 2. Why is it needed❓
 
 - ✅ **Accessibility**: Most ML models sit isolated in notebooks or dashboards. With this, users can get predictions through a chat.
 - 🔁 **Automation**: Combining n8n and Langchain allows continuous interaction and real-time insights without manual intervention.
@@ -14,7 +14,7 @@ This project integrates a stock price prediction machine learning model with an 
 
 ---
 
-## 🧰 3. Tech Stack for the ML Model
+## 3. Tech Stack for the ML Model
 
 | Component       | Description                                         |
 |----------------|-----------------------------------------------------|
@@ -27,7 +27,7 @@ This project integrates a stock price prediction machine learning model with an 
 
 ---
 
-## 🔄 4. n8n Workflow Overview
+## 4. n8n Workflow Overview
 
 The workflow enables interaction with the ML model via a conversational agent using Langchain + OpenAI:
 
@@ -42,23 +42,15 @@ The workflow enables interaction with the ML model via a conversational agent us
 | `Calculator`                 | Performs computations if needed               |
 | `SerpAPI`                    | Fetches external data (stock news/searches)   |
 
-### 🔄 Workflow Flow:
+### Workflow Flow:
 
 - The AI Agent intelligently routes queries using tools like calculator, search API, and the ML prediction responses.
 
 ---
 
-## 🧾 5. Conclusion
+## 5. Conclusion
 
 This project bridges predictive finance models and real-world usability through automation. By integrating the model with n8n and OpenAI’s conversational interface, we make financial insights accessible, scalable, and ready for production.
-
----
-
-## 📁 Files Included
-
-- `Stock Prediction Model with n8n.ipynb`: Full Python code and prediction model
-- `n8n_workflow.json`: JSON importable into n8n for end-to-end integration
-
 ---
 
 > ⚠️ Note: Before running, make sure your n8n instance has access to Langchain, OpenAI, and optional SerpAPI modules with correct credentials.
